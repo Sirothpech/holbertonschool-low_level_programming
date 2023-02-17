@@ -7,7 +7,7 @@
  * Return: - fin script
  */
 
-int main(void)
+int main()
 {int intType;
 float floatType;
 double doubleType;
