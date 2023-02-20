@@ -16,13 +16,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	lastdigit = n % 10;
 
-	if (n == 0)
+	if (lastdigit == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, lastdigit);
 	}
 	else
 	{
-		if (n <= 5)
+		if (lastdigit <= 5)
 		{
 			printf("Last digit of %d is %d and is less than 6 and 0\n", n, lastdigit);
 		}
