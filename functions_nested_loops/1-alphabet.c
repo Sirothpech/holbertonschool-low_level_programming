@@ -1,19 +1,17 @@
-#include "main.c"
+#include "main.h"
 /**
- * main - entry point
- * Putchar - description
+ * print_alphabet - description
  * Return: fin du script
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int print_alphabet;
+	char alphab;
 
-	for (print_alphabet = 'a'; print_alphabet <= 'z'; print_alphabet++)
+	for (alphab = 'a'; alphab <= 'z'; alphab++)
 
-		_putchar (print_alphabet);
+		_putchar (alphab);
 
 	_putchar ('\n');
 
-	return (0);
 }
