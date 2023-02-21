@@ -1,1 +1,1 @@
-void print_alphabet(void);
+int print_alphabet(char);
