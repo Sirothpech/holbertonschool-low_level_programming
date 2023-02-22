@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * add - Additionne deux entiers
+ * @a1 : num 1
+ * @b2 : num 2
+ * return - stop script
+ */
+
+int add(int a1, int b2)
+{
+	return (a1 + b2);
+}
