@@ -18,4 +18,6 @@ fclean:
 
 re: $(OBJ)
 	$(RM) $(OBJ)
+	$(CC) -c -o $(OBJ) $(SRC)
+	$(CC) -c -o $(OBJ) $(SRC)
 	$(CC) $(OBJ) -o $(NAME)
