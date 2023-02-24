@@ -1,0 +1,11 @@
+#include "main.h"
+/**
+ * isupper - check upppercase
+ * return: 1 if c upper 0 if false
+ */
+
+int _isupper(int c)
+{
+	for (c = 65; c <= 90; c++);
+	{
+		if (c == 65 && c <= 90);
