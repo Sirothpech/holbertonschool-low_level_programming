@@ -12,7 +12,7 @@ void print_most_numbers(void)
 	{
 		if (alphab != '2' && alphab != '4')
 
-		_putchar (alphab);
+			_putchar (alphab);
 	}
 
 	_putchar ('\n');
