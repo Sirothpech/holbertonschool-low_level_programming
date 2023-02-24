@@ -1,22 +1,21 @@
 #include "main.h"
+
 /**
- * print_alphabet_x10 - description
+ * main - entry point
+ * Putchar - description
  * Return: fin du script
  */
-
-void print_alphabet_x10(void)
+int main(void)
 {
-	char alphab;
-	int i = 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	while (i <= 9)
-	{
-		for (alphab = 'a'; alphab <= 'z'; alphab++)
-
-			_putchar (alphab);
-
-		_putchar ('\n');
-		i++;
-	}
-
+	return (0);
 }
