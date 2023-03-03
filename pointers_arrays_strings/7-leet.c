@@ -12,12 +12,13 @@ char *leet(char *s)
 	char letter[] = "aAeEoOtTlL";
 	char number[] = "4433007711";
 
-	while (s[i++] != '\0')
+	while (s[i] != '\0')
 
 	{
 		for (j = 0; letter[j] != '\0'; j++)
 			if (s[i] == letter[j])
 				s[i] = number[j];
+		i++;
 	}
 	return (s);
 }
