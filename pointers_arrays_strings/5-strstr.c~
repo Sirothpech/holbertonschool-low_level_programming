@@ -1,0 +1,41 @@
+#include <stddef.h>
+#include "main.h"
+/**
+ * _strcmp - compare array
+ * @s1: check 1
+ * @s2: check 2
+ * Return: result compare
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
+}
+/**
+ * _strstr - search string
+ * @haystack: array 1
+ * @needle: array 2
+ * Return: needle or 0
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	unsigned int len;
+
+	len = 0;
+	while (needle[len] != '\0')
+		len++;
+
+	while (*haystack != '\0')
+	{
+		if (_strcmp(haystack, needle, len) == 0)
+			return (haystack);
+		haystack++;
+	}
+	return (NULL);
+}
