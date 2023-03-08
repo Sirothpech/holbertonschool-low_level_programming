@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
- /**
-  * _abs - valeur absolue
-  * @n: char verif
-  * Return: fin du script
-  */
+/**
+ * _abs - valeur absolue
+ * @n: char verif
+ * Return: fin du script
+ */
 
 int _abs(int n)
 {
