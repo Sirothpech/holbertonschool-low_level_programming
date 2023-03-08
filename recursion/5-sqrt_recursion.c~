@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ * _sqrt_recursion - square root
+ * @y: carre
+ * @n: racine
+ * Return: retourne -1 ou y
+ */
+
+int _sqrt(int n, int y);
+
+int _sqrt_recursion(int n)
+{
+	return (_sqrt(n, 1));
+}
+
+/**
+ * _sqrt - init y
+ */
+
+int _sqrt(int n, int y)
+{
+	int racine = y * y;
+
+	if (racine > n)
+		return (-1);
+	if (racine == n)
+		return (y);
+	return (_sqrt(n, y + 1));
+}
