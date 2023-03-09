@@ -3,12 +3,12 @@
 int check_prime(int n, int y);
 
 /**
- * _is_prime_number - nombre premier
+ * is_prime_number - nombre premier
  * @n: check number
  * Return: ret funct
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	return (check_prime(n, 1));
 }
