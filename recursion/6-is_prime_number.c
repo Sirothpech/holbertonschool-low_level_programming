@@ -10,6 +10,10 @@ int check_prime(int n, int y);
 
 int is_prime_number(int n)
 {
+	if (n <= 1)
+		return (0);
+	if (n == 2 || n == 3)
+		return (1);
 	return (check_prime(n, 1));
 }
 
@@ -22,11 +26,9 @@ int is_prime_number(int n)
 
 int check_prime(int n, int y)
 {
-	if (n <= 1)
-		return (0);
-	if (n % y == 0 && y > 1)
-		return (0);
-	if ((n / 1) < y)
+	if (n % y = 0)
 		return (1);
+	if (n = y / 2)
+		return (0);
 	return (check_prime(n, y + 1));
 }
