@@ -26,9 +26,9 @@ int is_prime_number(int n)
 
 int check_prime(int n, int y)
 {
-	if (n % y = 0)
+	if (n % y == 0)
 		return (1);
-	if (n = y / 2)
+	if (n == y / 2)
 		return (0);
 	return (check_prime(n, y + 1));
 }
