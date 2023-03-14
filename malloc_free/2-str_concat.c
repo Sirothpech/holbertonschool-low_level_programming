@@ -1,0 +1,48 @@
+#include "main.h"
+#include <stddef.h>
+#include <string.h>
+#include <stdlib.h>
+/**
+ * str_concat - concat 2 string
+ * @s1: first string
+ * @s2: two string
+ * Return: NULL or " "
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+	char *s;
+	int i, j, k, l;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	if (s1 != NULL && s2 != NULL)
+	{
+		l = strlen(s1);
+		l = l + strlen(s2);
+	}
+
+	s = malloc(l * sizeof(char));
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	i = 0;
+	if (s1 != NULL)
+		for (j = 0; s1[j]; j++)
+		{
+			s[i] = s1[j];
+			i++;
+		}
+	if (s2 != NULL)
+		for (k = 0; s2[k]; k++)
+		{
+			s[i] = s2[k];
+			i++;
+		}
+	return (s);
+}
