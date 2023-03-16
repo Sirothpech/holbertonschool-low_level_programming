@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+/**
+ * main - print the ___FILE___
+ * Return: 0
+ */
+
+int main(void)
+{
+	printf(___FILE___"\n");
+	return (0);
+}
