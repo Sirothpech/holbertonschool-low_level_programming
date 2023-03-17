@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * array_range - range array
  * @min: min
@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 	j = abs(max - min) + 1;
-	ar = malloc(j * sizeof(*s));
+	ar = malloc(j * sizeof(*ar));
 	if (ar == NULL)
 	{
 		return (NULL);
