@@ -1,0 +1,31 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * struct dog - id dog
+ * @name: name dog
+ * @age: age dog
+ * @owner: owner dog
+ *
+ * Description: create a id dog
+ */
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
+struct dog *new_dog(char *name, float age, char *owner)
+{
+	struct dog *user;
+
+	user = malloc(sizeof(struct dog));
+	if (user == NULL)
+		return (NULL);
+	user->name = name;
+	user->age = age;
+	user->owner = owner;
+	return user;
+}
