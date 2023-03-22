@@ -1,0 +1,30 @@
+#include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
+/**
+ * print_numbers - print numbers with separator
+ * @separator: sep
+ * @n: integer
+ * Return: ret null if sep null
+ */
+
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+	unsigned int i;
+	int result;
+
+	va_list ptr;
+
+	va_start(ptr, n, separator);
+
+	if (separator == NULL)
+		return (NULL);
+
+	for (i = 0; i < n; i++)
+	{
+		result = va_arg(ptr, int, char);
+		printf("%d""%s ", n, separator);
+		va_end(ptr);
+		printf('\n');
+	}
+}
