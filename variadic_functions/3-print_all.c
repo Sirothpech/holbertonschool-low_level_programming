@@ -43,10 +43,7 @@ void p_string(va_list arg)
 	{
 		printf("%s", arg_s);
 	}
-	else
-	{
-		printf("(nil)");
-	}
+        printf("(nil)");
 }
 
 /**
