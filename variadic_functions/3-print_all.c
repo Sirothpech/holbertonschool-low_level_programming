@@ -41,7 +41,8 @@ void p_string(va_list arg)
 
 	if (arg_s == NULL)
 	{
-		printf("(nil)");
+		printf("%p", arg_s);
+		return ("(nil)");
 	}
 	printf("%s", arg_s);
 }
@@ -77,7 +78,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				array[i].f(arg);
-				separator =", ";
+				separator = ", ";
 			}
 			i++;
 		}
