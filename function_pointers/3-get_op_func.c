@@ -4,6 +4,7 @@
 /**
  * get_op_func - pointer funct
  * @s: char -> atoi
+ * Return: pointer funct result
  */
 
 int (*get_op_func(char *s))(int, int)
