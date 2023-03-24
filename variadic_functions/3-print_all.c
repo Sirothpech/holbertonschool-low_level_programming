@@ -73,7 +73,7 @@ void print_all(const char * const format, ...)
 		i = 0;
 		while (array[i].all)
 		{
-			if (array[i].all == format[j])||(array[i] != NULL)
+			if (array[i].all == format[j])&&(array[i] != NULL)
 			{
 				printf("%s", separator);
 				array[i].f(arg);
