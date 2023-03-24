@@ -39,11 +39,12 @@ void p_string(va_list arg)
 {
 	char *arg_s = va_arg(arg, char*);
 
-	if (arg_s != NULL)
+	if (arg_s == NULL)
 	{
-		printf("%s", arg_s);
+		printf("(nil)");
+		return;
 	}
-        printf("(nil)");
+	printf("%s", arg_s);
 }
 
 /**
