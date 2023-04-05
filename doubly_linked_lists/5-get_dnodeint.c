@@ -8,7 +8,7 @@
 
 unsigned int listint_len(dlistint_t *h)
 {
-	unsigned i = 0;
+	unsigned int i = 0;
 
 	while (h != NULL)
 	{
@@ -23,6 +23,7 @@ unsigned int listint_len(dlistint_t *h)
  * get_dnodeint_at_index - returns the nth node of a dlistint_t linked list.
  * @head: pointer to the struct
  * @index: index of the node
+ * Return: integer
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
