@@ -4,7 +4,7 @@
  * insert_dnodeint_at_index - func inserts a new node at a given position
  * @h: pointer at the struct
  * @idx: index reference
- * @n integer
+ * @n: integer
  * Return: new node or null if failed
  */
 
