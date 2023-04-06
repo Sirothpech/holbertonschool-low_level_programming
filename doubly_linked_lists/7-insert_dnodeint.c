@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - a func that inserts a new node at a given position
+ * insert_dnodeint_at_index - func inserts a new node at a given position
  * @h: pointer at the struct
  * @idx: index reference
  * @n integer
@@ -18,7 +18,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	current = *h;
 
-	while (i < idx -1)
+	while (i < idx - 1)
 	{
 		if (current == NULL)
 			return (NULL);
