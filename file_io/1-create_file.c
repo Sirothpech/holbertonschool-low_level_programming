@@ -18,6 +18,7 @@ int _strlen(char *s)
  * create_file - function that creates a file
  * @filemane: file
  * @text_content: string to write into the file
+ * Return: 1 or -1 if failed
  */
 
 int create_file(const char *filename, char *text_content)
@@ -30,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC | 0600);
 
 	if (fd == -1)
 	{
@@ -40,7 +41,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		len = write(fd, text_content, _strlen(text_content));
+		len = _strlen(text_content);
+		write(fd, text_content, len);
 		if (len == -1)
 		{
 			write(STDERR_FILENO, "fails\n", 6);
