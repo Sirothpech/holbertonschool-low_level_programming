@@ -1,20 +1,17 @@
 #include "main.h"
 /**
- * print_most_numbers - description
- * Return: fin du script
+ * print_most_numbers - function that prints the numbers, from 0 to 9
+ * Return: void
  */
 
 void print_most_numbers(void)
 {
-	char alphab;
+	char alpha;
 
-	for (alphab = '0'; alphab <= '9'; alphab++)
+	for (alpha = '0'; alpha <= '9'; alpha++)
 	{
-		if (alphab != '2' && alphab != '4')
-
-			_putchar (alphab);
+		if (alpha != '2' && alpha != '4')
+			_putchar(alphab);
 	}
-
-	_putchar ('\n');
-
+	_putchar('\n');
 }
